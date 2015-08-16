@@ -1,10 +1,11 @@
-"use strict";
+/*jslint node: true */
+'use strict';
 
 function cas(config, definitions) {
 	
 	// load transport
-	var Transport = require('./transport');
-	config.transportManager = new Transport();
+	var TransportManager = require('./transportmanager');
+	config.transportManager = new TransportManager();
 	config.transportManager.init(config);
 
 	// load sources
@@ -15,9 +16,7 @@ function cas(config, definitions) {
 
 	// init api server
 	var APIServer = require('./apiserver');
-	config.apiServer = new APIServer(config, function(){
-		
-	});
+	config.apiServer = new APIServer(config);
 
 }
 
