@@ -37,5 +37,9 @@
   "bugs": {
     "url": "https://github.com/lvnhmd/bdl/issues"
   },
-  "homepage": "https://github.com/lvnhmd/bdl"
+  "homepage": "https://github.com/lvnhmd/bdl",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "x-ray": "^2.0.2"
+  }
 }
